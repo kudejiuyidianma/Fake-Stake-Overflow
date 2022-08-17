@@ -1,0 +1,120 @@
+.singleQuestion{
+    border-top: 2px dotted rgba(44,44,44,0.671);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+}
+
+.sq_left{
+    float: left;
+    grid-column: 1;
+    text-align: center;
+    padding-inline: 1%;
+    display: grid;
+}
+
+.sq_mid{
+    float: left;
+    grid-column: 2;
+    text-align: left;
+    
+    padding-inline: 1%;
+    border-left: 2px dotted rgba(44,44,44,0.671);
+    border-right: 2px dotted rgba(44,44,44,0.671);
+}
+
+.sq_right{
+    float: left;
+    grid-column: 3;
+    display: grid;
+    padding-inline: 15%;
+}
+
+.sq_view, .sq_a, .sq_vote{
+    color: rgba(204, 201, 201, 0.753);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    grid-column: 3;
+}
+
+
+
+.sq_view{
+    grid-row: 1;
+}
+
+.sq_a{
+    grid-row: 2;
+}
+
+.sq_vote{
+    grid-row: 3;
+}
+
+.sq_title{
+    color: rgb(211, 123, 123);
+    -webkit-text-stroke: 1px rgb(211, 123, 123);
+    font-family: Gill Sans, sans-serif;
+    font-size: 22px;
+    grid-row: 1;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+
+.sq_title:hover{
+    text-decoration: underline;
+}
+
+span{
+    font-weight: bold;
+    color: #4361ee;
+}
+
+
+
+.sq_sum{
+    color: rgba(204, 201, 201, 0.753);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+    float: left;
+    padding-inline: 7%;
+    padding-block: 3%;
+}
+
+.sq_tag{
+    padding-left: 7%;
+    padding-block: 1%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+
+.sq_tag_cell{
+    float: left;
+    width: max-content;
+    background-color: transparent;
+    padding: 1%;
+    margin-right: 4%;
+    color: rgb(211, 123, 123);
+    border: 1px solid;
+    border-color: rgba(204, 201, 201, 0.753);
+    border-radius: 12px;
+    padding-inline: 8%;
+}
+
+.sq_tag_cell:hover{
+    background-color: rgb(211, 123, 123);
+    color: rgba(204, 201, 201, 0.753);
+}
+
+
+.sq_asker, .sq_on, .sq_at{
+    color:  rgb(211, 123, 123);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    
+}

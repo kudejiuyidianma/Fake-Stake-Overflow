@@ -1,0 +1,72 @@
+
+
+.userInfo{
+    display: grid;
+    grid-template-columns: auto, auto;
+
+}
+
+.profile_username{
+    color: rgba(204, 201, 201, 0.753);
+    font-size: 55px;
+    font-weight: bolder;
+    grid-column: 1;
+    padding-left: 8%;
+}
+
+.logout{
+    float: left;
+    grid-column: 2;
+    width: 40%;
+    height: 70%;
+    background-color: rgb(32, 104, 167);
+    color: rgba(204, 201, 201, 0.753);
+    font-size: 20px;
+    margin-left: 50%;
+    border-radius: 2%;
+}
+
+.regLength, .userReputation{
+    grid-column-end: 2;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: URW Chancery L, cursive;
+    color: rgba(204, 201, 201, 0.753);
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.userData{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.verNav{
+    margin-top: 7%;
+    margin-left: 3%;
+    grid-column: 1;
+    width: 20%;
+}
+
+.verNav_question, .verNav_answer, .verNav_tag{
+    padding-bottom: 4%;
+    margin-bottom: 15%;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(204, 201, 201, 0.753);
+    background-color: rgb(55, 55, 56);
+    border: 3px solid rgb(55, 55, 56);
+    border-radius: 3ch;
+    
+}
+
+.verNav_question:hover, .verNav_answer:hover, .verNav_tag:hover{
+    color: rgb(55, 55, 56);
+    background-color: rgba(204, 201, 201, 0.753);
+}
+
+.verNav_clicked, .verNav_answer_clicked, .verNav_tag_clicked{
+    color: rgb(55, 55, 56);
+    background-color: rgba(204, 201, 201, 0.753);
+}
+

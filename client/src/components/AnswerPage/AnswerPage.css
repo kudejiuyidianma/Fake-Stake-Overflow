@@ -1,0 +1,206 @@
+
+
+.question_part_in_answer_page{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding-bottom: 3%;
+    border-bottom: 3px double rgba(204, 201, 201, 0.753);
+}
+
+.vote_question{
+    grid-column: 1;
+}
+
+.upvote_question{
+    width: 0;
+    height: 0;
+    margin-left: 20%;
+    margin-top: 5%;
+    border: 30px solid rgb(211, 123, 123);
+    border-color: transparent transparent rgb(211, 123, 123) transparent;
+}
+
+.upvote_question:hover{
+    border-color: transparent transparent rgb(172, 82, 82) transparent;
+
+}
+
+.vote_num_question{
+    color: rgb(211, 123, 123);
+    font-size: 30px;
+    padding: 10%;
+    margin-left: 22%;
+}
+
+.downvote_question{
+    width: 0;
+    height: 0;
+    margin-left: 20%;
+    margin-top: 2%;
+    border: 30px solid rgb(211, 123, 123);
+    border-color: rgb(211, 123, 123) transparent transparent transparent;
+
+}
+
+.downvote_question:hover{
+    border-color: rgb(172, 82, 82) transparent transparent transparent;
+}
+
+
+.qp_question{
+    grid-column: 2;
+    display: grid;
+    padding-left: 6%;
+    grid-auto-rows: min-content;
+    border-left: 2px dotted rgba(204, 201, 201, 0.753);
+}
+
+.ap_qtitle{
+    color: rgba(204, 201, 201, 0.753);
+    font-weight: bold;
+    font-size: large;
+    font-size: 25px;
+}
+
+.ap_qtitle:hover{
+    text-decoration: underline;
+}
+
+.ap_view, .ap_ans{
+    color: rgb(211, 123, 123);
+    width: fit-content;
+    float: left;
+    font-size: 18px;
+    padding-right: 4%;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+.ap_qsum{
+    color: rgba(204, 201, 201, 0.753);
+    font-size: 19px;
+    padding-bottom: 4%;
+}
+
+.ap_tag_cell{
+    float: left;
+    width: max-content;
+    background-color: transparent;
+    padding: 1%;
+    margin-right: 4%;
+    color: rgb(211, 123, 123);
+    border: 1px solid;
+    border-color: rgb(211, 123, 123);
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.ap_tag_cell:hover{
+    background-color: rgb(211, 123, 123);
+    color:#04050afd;
+}
+
+.ap_askerInfo{
+    margin-left: 70%;
+    border: 2px solid rgba(160, 157, 157, 0.753);
+    margin-right: 5%;
+    padding: 1%;
+}
+
+.ap_asker_username, .ap_askat, .ap_askon{
+    color: rgb(211, 123, 123);
+}
+
+.ap_ansNum{
+    color: rgba(160, 157, 157, 0.753);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 4%;
+}
+
+.ap_page{
+    display: grid;
+    grid-template-columns: 1 1;
+}
+
+.prev_ans_page{
+    grid-column: 1;
+    width: 0;
+    height: 0;
+    margin-left: 40%;
+    margin-top: 5%;
+    border: 30px solid rgb(211, 123, 123);
+    border-color: transparent rgb(211, 123, 123) transparent transparent ;
+}
+
+.next_ans_page{
+    grid-column: 2;
+    width: 0;
+    height: 0;
+    margin-left: 40%;
+    margin-top: 5%;
+    border: 30px solid rgb(211, 123, 123);
+    border-color: transparent transparent transparent  rgb(211, 123, 123);
+}
+
+.prev_ans_page:hover{
+    border-color: transparent rgb(175, 88, 88) transparent transparent ;
+}
+
+.next_ans_page:hover{
+    border-color: transparent transparent transparent  rgb(175, 88, 88);
+}
+
+.new_ans_btn {
+    width: fit-content;
+    border: 0;
+    position: fixed;
+    bottom: 0;
+    /* background: rgba(160, 157, 157, 0.753); */
+    text-transform: uppercase;
+    color: rgb(211, 123, 123);
+    font-weight: bold;
+    position: relative;
+    outline: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-left: 40%;
+    margin-top: 5%;
+  }
+  
+  .new_ans_btn::before, .new_ans_btn::after {
+    box-sizing: inherit;
+    position: absolute;
+    content: '';
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  
+  .new_ans_btn::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .new_ans_btn::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .new_ans_btn:hover::before, .new_ans_btn:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .new_ans_btn:hover::before {
+    border-top-color: rgb(211, 123, 123);
+    border-right-color: rgb(211, 123, 123);
+    transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+  }
+  
+  .new_ans_btn:hover::after {
+    border-bottom-color: rgb(211, 123, 123);
+    border-left-color: rgb(211, 123, 123);
+    transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
+  }
+  

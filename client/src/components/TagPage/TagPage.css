@@ -1,0 +1,32 @@
+
+
+.tag_set{
+    width: 100%;
+    display: inline-block;
+    padding: 3%;
+    margin-left: 6%;
+    margin-top: 1%;
+}
+
+.tagi{
+    display: block;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    float: left;
+    padding: 2%;
+    margin: 3%;
+    border: 5px solid rgba(204, 201, 201, 0.753);
+    
+}
+
+.tagi_name, .tagi_num{
+    display: inline-block;
+    padding: 1% ;
+    color: rgba(199, 79, 115, 0.932);
+    font-size: 20px;
+}
+
+.tagi_name:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,61 @@
+.single_ans{
+    border-bottom: 3px solid rgba(204, 201, 201, 0.753);
+}
+
+.ans_grid{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+
+
+.ans_text{
+    color: rgba(204, 201, 201, 0.753);
+    font-weight: bold;
+    padding: 8%;
+}
+
+.ans_time, .ans_by{
+    color: rgb(211, 123, 123);
+    font-weight: bold;
+    margin-left: 80%;
+}
+
+.ans_vote{
+    grid-column: 1;
+}
+
+.upvote_answer{
+    width: 0;
+    height: 0;
+    margin-left: 20%;
+    margin-block: 5%;
+    border: 30px solid rgb(211, 123, 123);
+    border-color: transparent transparent rgb(211, 123, 123) transparent;
+}
+
+.upvote_answer:hover{
+    border-color: transparent transparent rgb(172, 82, 82) transparent;
+
+}
+
+.vote_num_ans{
+    color: rgb(211, 123, 123);
+    font-size: 30px;
+    padding: 10%;
+    margin-left: 25%;
+}
+
+.downvote_ans{
+    width: 0;
+    height: 0;
+    margin-left: 20%;
+    margin-block: 2%;
+    border: 30px solid rgb(211, 123, 123);
+    border-color: rgb(211, 123, 123) transparent transparent transparent;
+
+}
+
+.downvote_ans:hover{
+    border-color: rgb(172, 82, 82) transparent transparent transparent;
+}

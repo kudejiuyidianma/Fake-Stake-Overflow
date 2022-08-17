@@ -1,0 +1,37 @@
+
+.banner{
+    display: grid;
+    grid-template-columns: 1 1 1;
+    margin-top: 7%;
+}
+
+.banner_left{
+    grid-column: 1;
+}
+
+.banner_mid{
+    grid-column: 2;
+}
+
+.banner_right{
+    grid-column: 3;
+    background-color: rgb(211, 123, 123);
+    border: 2px solid rgb(197, 184, 184);
+    border-radius: 12px;
+    width: max-content;
+    padding-inline: 6%;
+    margin-left: 30%;
+}
+
+.banner_right:hover{
+    background-color:rgb(197, 184, 184);
+    color: #04050afd;
+}
+
+.banner_left, .banner_mid, .banner_right{
+    color: rgb(197, 184, 184);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+}
